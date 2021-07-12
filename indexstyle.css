@@ -27,7 +27,7 @@ a {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  padding: 10px;
+  padding: 1vmin;
   text-align: center;
   color: #000;
   background-color: rgba(255,255,255,0.5);
@@ -76,7 +76,7 @@ h3 {
 	color: #000;
 	background-color:white;
 	text-align:center;
-	padding: 50px 80px;
+	padding: 3vmin 5vmin;
 	text-align: justify;
 }
 
@@ -114,6 +114,22 @@ h3 {
   .bioImage, .eduImage, .expImage, .projectsImage {
     background-attachment: scroll;
   }
+  
+ .bioImage {
+  min-height: 100vmin;
+}
+
+.eduImage {
+  min-height: 40vmin;
+}
+
+.expImage {
+  min-height: 40vmin;
+}
+
+.projectsImage {
+  min-height: 40vmin;
+} 
   
   p {
 	font: 3vmin "Lato", sans-serif;
