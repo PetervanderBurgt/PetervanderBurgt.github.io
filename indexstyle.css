@@ -44,12 +44,14 @@ body, html {
 
 p, h1, h2 {
 	color: black;
+	font: 2vmin "Lato", sans-serif;
+
 }
 
 h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font: 80px "Lato", sans-serif;
+  font: 10vmin "Lato", sans-serif;
   color: #FFF;
   text-shadow: #000 0px 0 20px;
 
@@ -58,7 +60,7 @@ h1 {
 h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font: 40px "Lato", sans-serif;
+  font: 5vmin "Lato", sans-serif;
   color: #FFF;
   text-shadow: #000 0px 0 20px;
 }
@@ -66,7 +68,7 @@ h2 {
 h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 3vmin "Lato", sans-serif;
   color: #000;
 }
 
@@ -108,8 +110,13 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media (pointer:none), (pointer:coarse) {
   .bioImage, .eduImage, .expImage, .projectsImage {
     background-attachment: scroll;
   }
+  
+  p {
+	font: 3vmin "Lato", sans-serif;
+
+}
 }
