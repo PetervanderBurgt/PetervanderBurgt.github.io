@@ -44,7 +44,7 @@ body, html {
 
 p, h1, h2 {
 	color: black;
-	font: 2vmin "Lato", sans-serif;
+	font: 1.5vmin "Lato", sans-serif;
 
 }
 
@@ -69,6 +69,13 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font: 3vmin "Lato", sans-serif;
+  color: #000;
+}
+
+h4 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font: 2vmin "Lato", sans-serif;
   color: #000;
 }
 
@@ -109,6 +116,109 @@ h3 {
   color: #000;
 }
 
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0.5vmin;
+  background-color: #000080;
+  top: 0;
+  bottom: 0;
+  left: 1vmin;
+  margin-left: -0.25vmin;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: white;
+  width: 80vmax;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 3vmin;
+  height: 3vmin;
+  right: -1vmin;
+  background-color: #e67e00;
+  border: 0.5vmin solid #000080;
+  top: 2vmin;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right {
+  left: 2vmin;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 3vmin;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #C0C0C0;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #C0C0C0 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -3vmin;
+}
+
+.contentTimeline {
+  padding: 20px 30px;
+  background-color: #C0C0C0;
+  position: relative;
+  border-radius: 6px;
+}
+
+.contentTimeline a{
+	text-decoration: none;
+	color: #e67e00;
+}
+
+.contentTimeline li{
+	color: black;
+	font: 1.5vmin "Lato", sans-serif;
+
+}
+
+.contentTimeline ul{
+  margin: 0 0;
+  padding: 0 1em;
+  list-style: none;
+}
+
+.contentTimeline li::before { 
+  content: "";
+  border-color: transparent #e67e00;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media (pointer:none), (pointer:coarse) {
   .bioImage, .eduImage, .expImage, .projectsImage {
@@ -131,8 +241,17 @@ h3 {
   min-height: 40vmin;
 } 
   
-  p {
-	font: 3vmin "Lato", sans-serif;
+p {
+	font: 2.5vmin "Lato", sans-serif;
+}
+
+.contentTimeline li{
+	font: 2.5vmin "Lato", sans-serif;
 
 }
+
+.container {
+  width: 80vmin;
+}
+
 }
