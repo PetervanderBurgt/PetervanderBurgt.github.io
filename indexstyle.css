@@ -1,3 +1,8 @@
+:root {
+  --main-color: #102636;
+  --accent-color: #6180AE;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -129,7 +134,7 @@ h4 {
   content: '';
   position: absolute;
   width: 0.5vmin;
-  background-color: #000080;
+  background-color: var(--main-color);
   top: 0;
   bottom: 0;
   left: 1vmin;
@@ -150,7 +155,7 @@ h4 {
   position: absolute;
   width: 2.5vmin;
   height: 2.5vmin;
-  background-color: #000080;
+  background-color: var(--main-color);
   border: 0.75vmin solid transparent;
   top: 2vmin;
   border-radius: 50%;
@@ -162,8 +167,8 @@ h4 {
   left: 2vmin;
 }
 .current::after {
-  background-color: #e67e00;
-  border: 0.75vmin solid #000080;
+  background-color: var(--accent-color);
+  border: 0.75vmin solid var(--main-color);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -194,7 +199,7 @@ h4 {
 
 .contentTimeline a{
 	text-decoration: none;
-	color: #e67e00;
+	color: var(--accent-color);
 }
 
 .contentTimeline li{
@@ -211,7 +216,7 @@ h4 {
 
 .contentTimeline li::before { 
   content: "";
-  border-color: transparent #e67e00;
+  border-color: transparent var(--accent-color);
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.45em;
   display: block;
