@@ -1,11 +1,14 @@
 :root {
   --main-color: #102636;
   --accent-color: #6180AE;
+  --text-color: #000;
+  --headline-color: #FFF;
+
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 
 .bioImage, .eduImage, .expImage, .projectsImage {
@@ -34,7 +37,7 @@ a {
   transform: translate(-50%, -50%);
   padding: 1vmin;
   text-align: center;
-  color: #000;
+  color: var(--text-color);
   background-color: rgba(255,255,255,0.5);
 
 }
@@ -44,7 +47,7 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #000;
+  color: var(--text-color);
 }
 
 p, h1, h2 {
@@ -57,7 +60,7 @@ h1 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font: 10vmin "Lato", sans-serif;
-  color: #FFF;
+  color: var(--headline-color);
   text-shadow: #000 0px 0 20px;
 
 }
@@ -66,7 +69,7 @@ h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font: 5vmin "Lato", sans-serif;
-  color: #FFF;
+  color: var(--headline-color);
   text-shadow: #000 0px 0 20px;
 }
 
@@ -74,18 +77,49 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font: 3vmin "Lato", sans-serif;
-  color: #000;
+  color: var(--text-color);
 }
 
 h4 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font: 2vmin "Lato", sans-serif;
-  color: #000;
+  color: var(--text-color);
+}
+
+label{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font: 2vmin "Lato", sans-serif;
+  color: var(--text-color);
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--accent-color);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+button{
+	color: var(--headline-color);
+    background-color: var(--accent-color);
+    padding: 0.25em 1em 0.2em 1em;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+	
 }
 
 .content {
-	color: #000;
+	color: var(--text-color);
 	background-color:white;
 	text-align:center;
 	padding: 3vmin 5vmin;
@@ -118,7 +152,7 @@ h4 {
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: var(--text-color);
 }
 
 
