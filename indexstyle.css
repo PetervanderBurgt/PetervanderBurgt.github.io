@@ -131,7 +131,7 @@ button{
 	color: var(--text-color);
 	background-color:white;
 	text-align:center;
-	padding: 3vmin 5vmin;
+	padding: 3vmin 25vmin;
 	text-align: justify;
 }
 
@@ -189,7 +189,7 @@ button{
   padding: 10px 40px;
   position: relative;
   background-color: white;
-  width: 80vmax;
+  width: 60vmax;
 }
 
 /* The circles on the timeline */
@@ -298,6 +298,11 @@ p {
 
 .contentTimeline li{
 	font: 2.5vmin "Lato", sans-serif;
+
+}
+
+.content {
+	padding: 3vmin 5vmin;
 
 }
 
